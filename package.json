@@ -1,0 +1,21 @@
+{
+  "main": "index.js",
+  "devDependencies": {
+    "cypress": "^12.17.3"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^17.2.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "get-ssl-certificate": "^2.3.3",
+    "pg-promise": "^11.5.3",
+    "prettier": "^2.8.8",
+    "pg": "^8.11.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run:uat": "cypress run --config-file cypress.config.uat.js", 
+    "run:stg": "cypress run --config-file cypress.config.stg.js",
+    "open:uat": "cypress open --config-file cypress.config.uat.js",
+    "open:stg": "cypress open --config-file cypress.config.stg.js"
+  }
+}
